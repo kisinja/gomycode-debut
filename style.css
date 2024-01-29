@@ -1,0 +1,18 @@
+.btn {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.google {
+    background-color: greenyellow;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
