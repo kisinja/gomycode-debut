@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<style>
+    form {
+        width: 400px;
+        box-shadow: 0 0 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 20px;
+        margin: auto;
+        position: relative;
+    }
+
+    input {
+        width: 90%;
+        border: none;
+        border-bottom: 1px solid gray;
+        outline: none;
+    }
+
+    label,
+    input {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .button {
+        width: 110px;
+        padding: 10px;
+        background: greenyellow;
+        border: none;
+        color: white;
+        font-weight: bolder;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background .5s;
+    }
+
+    .button:hover {
+        background: black;
+    }
+
+    select{
+        padding: 10px;
+        outline: none;
+    }
+
+    textarea{
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <form action="" method="POST">
+        <h3 style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">Sign Up</h3>
+        <label for="username">Name:</label>
+        <input type="text" name="username" placeholder="Enter your name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your email">
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter your password">
+        <select name="" id="">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="binary">Binary</option>
+            <option value="not-say">Rather not say</option>
+        </select>
+        <textarea name="" placeholder="Type something.." cols="30" rows="10"></textarea>
+        <input type="submit" class="button" value="Submit Form">
+    </form>
+</body>
+
+</html>
